@@ -3,7 +3,7 @@ name: Automated Paper Trading Bot
 on:
   schedule:
     # 09:35 AM ET on trading days (Monday - Friday)
-    # Covers both Daylight Saving Time (13:35 UTC) and Standard Time (14:35 UTC)
+    # Covers Daylight Saving Time (13:35 UTC) and Standard Time (14:35 UTC)
     - cron: '35 13 * * 1-5'
     - cron: '35 14 * * 1-5'
     # Mid-day check at 01:00 PM ET
@@ -16,7 +16,7 @@ on:
         description: 'Force execute immediately regardless of market hours'
         required: false
         type: boolean
-        default: false
+        default: true
       top_n:
         description: 'Number of top momentum stocks to allocate'
         required: false
@@ -36,6 +36,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -54,17 +55,29 @@ jobs:
           if [ "${{ github.event.inputs.allow_after_hours }}" = "true" ]; then
             EXTRA_FLAGS="--allow-after-hours"
           fi
-          TOP_N="${{ github.event.inputs.top_n || 3 }}"
+          
+          TOP_N="${{ github.event.inputs.top_n }}"
+          if [ -z "$TOP_N" ]; then
+            TOP_N=3
+          fi
+          
           python src/bot.py --top-n "$TOP_N" $EXTRA_FLAGS
 
       - name: Commit and Push Updated Portfolio Ledger
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/paper_portfolio.json data/raw/*.csv models/*.pt
+
+          # Safely stage portfolio changes without crashing if optional files don't exist
+          git add data/ 2>/dev/null || true
+          if [ -d models ]; then
+            git add models/ 2>/dev/null || true
+          fi
+
           if git diff --staged --quiet; then
-            echo "No portfolio changes or orders executed this cycle."
+            echo "No portfolio changes to commit."
           else
             git commit -m "Auto Paper Trade Update: $(date -u '+%Y-%m-%d %H:%M:%S UTC') [skip ci]"
-            git push
+            git pull --rebase origin main || true
+            git push origin main || echo "::warning::Push failed. Ensure 'Read and write permissions' are enabled under repo Settings -> Actions -> General -> Workflow permissions."
           fi
