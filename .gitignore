@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Model checkpoints & data cache
+models/*.pt
+data/*.csv
+data/*.parquet
+!data/README.md
+!data/paper_portfolio.json
+!notebooks/README.md

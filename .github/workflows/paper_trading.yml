@@ -1,0 +1,70 @@
+name: Automated Paper Trading Bot
+
+on:
+  schedule:
+    # 09:35 AM ET on trading days (Monday - Friday)
+    # Covers both Daylight Saving Time (13:35 UTC) and Standard Time (14:35 UTC)
+    - cron: '35 13 * * 1-5'
+    - cron: '35 14 * * 1-5'
+    # Mid-day check at 01:00 PM ET
+    - cron: '0 17 * * 1-5'
+    - cron: '0 18 * * 1-5'
+
+  workflow_dispatch:
+    inputs:
+      allow_after_hours:
+        description: 'Force execute immediately regardless of market hours'
+        required: false
+        type: boolean
+        default: false
+      top_n:
+        description: 'Number of top momentum stocks to allocate'
+        required: false
+        type: number
+        default: 3
+
+permissions:
+  contents: write
+
+jobs:
+  trade:
+    name: Scan Market & Execute Paper Trades
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Paper Trading Bot
+        run: |
+          EXTRA_FLAGS=""
+          if [ "${{ github.event.inputs.allow_after_hours }}" = "true" ]; then
+            EXTRA_FLAGS="--allow-after-hours"
+          fi
+          TOP_N="${{ github.event.inputs.top_n || 3 }}"
+          python src/bot.py --top-n "$TOP_N" $EXTRA_FLAGS
+
+      - name: Commit and Push Updated Portfolio Ledger
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/paper_portfolio.json data/raw/*.csv models/*.pt
+          if git diff --staged --quiet; then
+            echo "No portfolio changes or orders executed this cycle."
+          else
+            git commit -m "Auto Paper Trade Update: $(date -u '+%Y-%m-%d %H:%M:%S UTC') [skip ci]"
+            git push
+          fi
