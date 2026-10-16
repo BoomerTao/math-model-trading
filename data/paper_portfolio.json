@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.0,
+  "cash": 0.17,
   "positions": {
-    "CEG": {
-      "qty": 121.15154543940153,
-      "avg_price": 275.1375,
-      "entry_time": "2026-10-16 05:03:10 UTC"
-    },
-    "DELL": {
-      "qty": 70.37891371785273,
-      "avg_price": 473.6267096557617,
-      "entry_time": "2026-10-16 05:03:10 UTC"
-    },
     "VST": {
       "qty": 216.1034921938945,
       "avg_price": 154.24708316802977,
       "entry_time": "2026-10-16 05:03:10 UTC"
+    },
+    "CORZ": {
+      "qty": 2303.7147522754726,
+      "avg_price": 14.462227423667908,
+      "entry_time": "2026-10-16 17:42:29 UTC"
+    },
+    "NTAP": {
+      "qty": 155.10105748352743,
+      "avg_price": 214.8073469467163,
+      "entry_time": "2026-10-16 17:42:29 UTC"
     }
   },
   "trade_history": [
@@ -45,7 +45,45 @@
       "exec_price": 154.25,
       "total_value": 33333.33,
       "reason": "Top #3 rank allocation (P(Up)=53.2%)"
+    },
+    {
+      "timestamp": "2026-10-16 17:42:29 UTC",
+      "action": "SELL",
+      "ticker": "CEG",
+      "shares": 121.1515,
+      "exec_price": 275.0,
+      "total_value": 33316.97,
+      "realized_pnl": -16.36,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-16 17:42:29 UTC",
+      "action": "SELL",
+      "ticker": "DELL",
+      "shares": 70.3789,
+      "exec_price": 473.39,
+      "total_value": 33316.9,
+      "realized_pnl": -16.44,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-16 17:42:29 UTC",
+      "action": "BUY",
+      "ticker": "CORZ",
+      "shares": 2303.7148,
+      "exec_price": 14.46,
+      "total_value": 33316.85,
+      "reason": "Top #1 rank allocation (P(Up)=60.5%)"
+    },
+    {
+      "timestamp": "2026-10-16 17:42:29 UTC",
+      "action": "BUY",
+      "ticker": "NTAP",
+      "shares": 155.1011,
+      "exec_price": 214.81,
+      "total_value": 33316.85,
+      "reason": "Top #3 rank allocation (P(Up)=57.6%)"
     }
   ],
-  "last_updated": "2026-10-16T05:03:10.762390+00:00"
+  "last_updated": "2026-10-16T17:42:29.579597+00:00"
 }
