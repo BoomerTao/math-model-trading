@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 5.89,
+  "cash": 0.0,
   "positions": {
-    "CORZ": {
-      "qty": 2303.7147522754726,
-      "avg_price": 14.462227423667908,
-      "entry_time": "2026-10-16 17:42:29 UTC"
+    "MDB": {
+      "qty": 90.80326423560213,
+      "avg_price": 366.67323522949215,
+      "entry_time": "2026-10-16 19:50:25 UTC"
     },
-    "IREN": {
-      "qty": 1095.4077859255567,
-      "avg_price": 30.405194389343265,
-      "entry_time": "2026-10-16 18:18:00 UTC"
+    "VST": {
+      "qty": 215.85579437114197,
+      "avg_price": 154.24708316802977,
+      "entry_time": "2026-10-16 19:50:25 UTC"
     },
-    "CEG": {
-      "qty": 121.05251616615934,
-      "avg_price": 275.1375,
-      "entry_time": "2026-10-16 18:18:00 UTC"
+    "AVGO": {
+      "qty": 96.64707902508205,
+      "avg_price": 344.50215156555174,
+      "entry_time": "2026-10-16 19:50:25 UTC"
     }
   },
   "trade_history": [
@@ -121,7 +121,64 @@
       "exec_price": 275.14,
       "total_value": 33306.09,
       "reason": "Top #3 rank allocation (P(Up)=51.5%)"
+    },
+    {
+      "timestamp": "2026-10-16 19:50:25 UTC",
+      "action": "SELL",
+      "ticker": "CORZ",
+      "shares": 2303.7148,
+      "exec_price": 14.45,
+      "total_value": 33295.06,
+      "realized_pnl": -21.79,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-16 19:50:25 UTC",
+      "action": "SELL",
+      "ticker": "IREN",
+      "shares": 1095.4078,
+      "exec_price": 30.39,
+      "total_value": 33294.7,
+      "realized_pnl": -11.39,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-16 19:50:25 UTC",
+      "action": "SELL",
+      "ticker": "CEG",
+      "shares": 121.0525,
+      "exec_price": 275.0,
+      "total_value": 33289.74,
+      "realized_pnl": -16.35,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-16 19:50:25 UTC",
+      "action": "BUY",
+      "ticker": "MDB",
+      "shares": 90.8033,
+      "exec_price": 366.67,
+      "total_value": 33295.13,
+      "reason": "Top #1 rank allocation (P(Up)=63.2%)"
+    },
+    {
+      "timestamp": "2026-10-16 19:50:25 UTC",
+      "action": "BUY",
+      "ticker": "VST",
+      "shares": 215.8558,
+      "exec_price": 154.25,
+      "total_value": 33295.13,
+      "reason": "Top #2 rank allocation (P(Up)=61.5%)"
+    },
+    {
+      "timestamp": "2026-10-16 19:50:25 UTC",
+      "action": "BUY",
+      "ticker": "AVGO",
+      "shares": 96.6471,
+      "exec_price": 344.5,
+      "total_value": 33295.13,
+      "reason": "Top #3 rank allocation (P(Up)=58.1%)"
     }
   ],
-  "last_updated": "2026-10-16T18:18:00.642320+00:00"
+  "last_updated": "2026-10-16T19:50:25.040207+00:00"
 }
