@@ -1,0 +1,15 @@
+{
+  "description": "Stock screening pool for the mathematical LSTM paper trading bot",
+  "tickers": [
+    "SPY",
+    "QQQ",
+    "AAPL",
+    "NVDA",
+    "TSLA",
+    "AMD",
+    "MSFT",
+    "AMZN",
+    "META",
+    "APLD"
+  ]
+}

@@ -1,11 +1,17 @@
-"""Stock screening and ranking engine using mathematical indicators and LSTM forecasting."""
-
 from dataclasses import dataclass
+import json
 import os
+from pathlib import Path
+import sys
 from typing import Dict, List, Optional
 import numpy as np
 import pandas as pd
 import torch
+
+# Ensure project root is in sys.path
+project_root = Path(__file__).resolve().parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
 
 from src.data_prep import (
     build_feature_dataset,
@@ -15,9 +21,23 @@ from src.data_prep import (
 from src.model import LSTMForecaster
 
 
-DEFAULT_UNIVERSE = [
+FALLBACK_UNIVERSE = [
     "SPY", "QQQ", "AAPL", "NVDA", "TSLA", "AMD", "MSFT", "AMZN", "META", "APLD"
 ]
+
+
+def load_watchlist(config_path: str = "config/watchlist.json") -> List[str]:
+    """Load stock universe from JSON config file if present, else fallback."""
+    if os.path.exists(config_path):
+        try:
+            with open(config_path, "r") as f:
+                data = json.load(f)
+                tickers = data.get("tickers", [])
+                if tickers:
+                    return [str(t).upper().strip() for t in tickers]
+        except Exception as e:
+            print(f"[!] Warning: Failed to read {config_path} ({e}). Using default universe.")
+    return FALLBACK_UNIVERSE
 
 
 @dataclass
@@ -42,7 +62,7 @@ class MarketScreener:
         model_dir: str = "models",
         device: Optional[torch.device] = None,
     ):
-        self.universe = universe or DEFAULT_UNIVERSE
+        self.universe = universe or load_watchlist()
         self.sequence_length = sequence_length
         self.model_dir = model_dir
         self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -143,3 +163,41 @@ class MarketScreener:
             cand.rank = i + 1
 
         return candidates[:top_n]
+
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Market Momentum & LSTM Stock Screener")
+    parser.add_argument("--list", action="store_true", help="List all stocks currently in the screening pool")
+    parser.add_argument("--top-n", type=int, default=10, help="Number of ranked candidates to show (default: 10)")
+    parser.add_argument("--config", type=str, default="config/watchlist.json", help="Path to watchlist config")
+    args = parser.parse_args()
+
+    tickers = load_watchlist(args.config)
+
+    if args.list:
+        print("\n" + "=" * 50)
+        print(f"  CURRENT STOCK SCREENING POOL ({len(tickers)} tickers)")
+        print("=" * 50)
+        for i, ticker in enumerate(tickers, 1):
+            print(f" {i:2d}. {ticker}")
+        print("=" * 50)
+        print("To edit this pool, modify: config/watchlist.json\n")
+    else:
+        screener = MarketScreener(universe=tickers)
+        top_picks = screener.scan_universe(top_n=args.top_n)
+
+        print("\n" + "=" * 75)
+        print("                      LIVE STOCK POOL RANKINGS")
+        print("=" * 75)
+        print(f"{'Rank':<6} {'Ticker':<7} {'Price':>9} {'P(Up)':>8} {'Acceleration':>15} {'EWMA Spread':>13} {'Score':>8}")
+        print("-" * 75)
+        for c in top_picks:
+            print(
+                f"#{c.rank:<5} {c.ticker:<7} ${c.last_price:>8.2f} "
+                f"{c.pred_prob_up * 100:>7.1f}% {c.accel_momentum:>+15.5f} "
+                f"{c.ewma_dev * 100:>+12.2f}% {c.composite_score:>8.3f}"
+            )
+        print("=" * 75 + "\n")
+
