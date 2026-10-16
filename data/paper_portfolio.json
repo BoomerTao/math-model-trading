@@ -1,0 +1,51 @@
+{
+  "initial_cash": 100000.0,
+  "cash": 0.0,
+  "positions": {
+    "CEG": {
+      "qty": 121.15154543940153,
+      "avg_price": 275.1375,
+      "entry_time": "2026-10-16 05:03:10 UTC"
+    },
+    "DELL": {
+      "qty": 70.37891371785273,
+      "avg_price": 473.6267096557617,
+      "entry_time": "2026-10-16 05:03:10 UTC"
+    },
+    "VST": {
+      "qty": 216.1034921938945,
+      "avg_price": 154.24708316802977,
+      "entry_time": "2026-10-16 05:03:10 UTC"
+    }
+  },
+  "trade_history": [
+    {
+      "timestamp": "2026-10-16 05:03:10 UTC",
+      "action": "BUY",
+      "ticker": "CEG",
+      "shares": 121.1515,
+      "exec_price": 275.14,
+      "total_value": 33333.33,
+      "reason": "Top #1 rank allocation (P(Up)=54.0%)"
+    },
+    {
+      "timestamp": "2026-10-16 05:03:10 UTC",
+      "action": "BUY",
+      "ticker": "DELL",
+      "shares": 70.3789,
+      "exec_price": 473.63,
+      "total_value": 33333.33,
+      "reason": "Top #2 rank allocation (P(Up)=58.7%)"
+    },
+    {
+      "timestamp": "2026-10-16 05:03:10 UTC",
+      "action": "BUY",
+      "ticker": "VST",
+      "shares": 216.1035,
+      "exec_price": 154.25,
+      "total_value": 33333.33,
+      "reason": "Top #3 rank allocation (P(Up)=53.2%)"
+    }
+  ],
+  "last_updated": "2026-10-16T05:03:10.762390+00:00"
+}
