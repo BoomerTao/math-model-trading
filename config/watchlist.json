@@ -1,15 +1,83 @@
 {
-  "description": "Stock screening pool for the mathematical LSTM paper trading bot",
+  "description": "Comprehensive AI Ecosystem Universe: Data Centers, Specialized Cloud, Chips, Storage, Networking, and Software",
+  "sectors": {
+    "AI Data Centers, Power & Cooling": [
+      "APLD",
+      "VRT",
+      "CORZ",
+      "IREN",
+      "WULF",
+      "CEG",
+      "VST"
+    ],
+    "AI Cloud & Hyperscalers": [
+      "CRWV",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "ORCL"
+    ],
+    "AI Chips, Foundries & Equipment": [
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "ARM",
+      "MRVL",
+      "ASML",
+      "AMAT",
+      "LRCX"
+    ],
+    "AI Storage & Memory (HBM)": [
+      "MU",
+      "WDC",
+      "STX",
+      "NTAP"
+    ],
+    "AI Server Hardware & High-Speed Networking": [
+      "DELL",
+      "SMCI",
+      "ANET"
+    ],
+    "AI Enterprise Software & Cyber": [
+      "PLTR",
+      "CRWD",
+      "SNOW",
+      "MDB"
+    ]
+  },
   "tickers": [
-    "SPY",
-    "QQQ",
-    "AAPL",
-    "NVDA",
-    "TSLA",
-    "AMD",
+    "APLD",
+    "VRT",
+    "CORZ",
+    "IREN",
+    "WULF",
+    "CEG",
+    "VST",
+    "CRWV",
     "MSFT",
     "AMZN",
-    "META",
-    "APLD"
+    "GOOGL",
+    "ORCL",
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "TSM",
+    "ARM",
+    "MRVL",
+    "ASML",
+    "AMAT",
+    "LRCX",
+    "MU",
+    "WDC",
+    "STX",
+    "NTAP",
+    "DELL",
+    "SMCI",
+    "ANET",
+    "PLTR",
+    "CRWD",
+    "SNOW",
+    "MDB"
   ]
 }

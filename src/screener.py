@@ -3,7 +3,7 @@ import json
 import os
 from pathlib import Path
 import sys
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 import torch
@@ -26,18 +26,30 @@ FALLBACK_UNIVERSE = [
 ]
 
 
-def load_watchlist(config_path: str = "config/watchlist.json") -> List[str]:
-    """Load stock universe from JSON config file if present, else fallback."""
+def load_watchlist(config_path: str = "config/watchlist.json") -> Tuple[List[str], Dict[str, List[str]]]:
+    """Load stock universe and sector mappings from JSON config file."""
+    sectors_map = {}
     if os.path.exists(config_path):
         try:
             with open(config_path, "r") as f:
                 data = json.load(f)
+                sectors_map = data.get("sectors", {})
                 tickers = data.get("tickers", [])
+                if not tickers and sectors_map:
+                    for sec_tickers in sectors_map.values():
+                        tickers.extend(sec_tickers)
                 if tickers:
-                    return [str(t).upper().strip() for t in tickers]
+                    seen = set()
+                    unique = []
+                    for t in tickers:
+                        clean_t = str(t).upper().strip()
+                        if clean_t not in seen:
+                            seen.add(clean_t)
+                            unique.append(clean_t)
+                    return unique, sectors_map
         except Exception as e:
             print(f"[!] Warning: Failed to read {config_path} ({e}). Using default universe.")
-    return FALLBACK_UNIVERSE
+    return FALLBACK_UNIVERSE, sectors_map
 
 
 @dataclass
@@ -62,7 +74,11 @@ class MarketScreener:
         model_dir: str = "models",
         device: Optional[torch.device] = None,
     ):
-        self.universe = universe or load_watchlist()
+        if universe is None:
+            loaded_tickers, _ = load_watchlist()
+            self.universe = loaded_tickers
+        else:
+            self.universe = universe
         self.sequence_length = sequence_length
         self.model_dir = model_dir
         self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -174,15 +190,20 @@ if __name__ == "__main__":
     parser.add_argument("--config", type=str, default="config/watchlist.json", help="Path to watchlist config")
     args = parser.parse_args()
 
-    tickers = load_watchlist(args.config)
+    tickers, sectors_map = load_watchlist(args.config)
 
     if args.list:
-        print("\n" + "=" * 50)
-        print(f"  CURRENT STOCK SCREENING POOL ({len(tickers)} tickers)")
-        print("=" * 50)
-        for i, ticker in enumerate(tickers, 1):
-            print(f" {i:2d}. {ticker}")
-        print("=" * 50)
+        print("\n" + "=" * 65)
+        print(f"        AI & MOMENTUM SCREENING UNIVERSE ({len(tickers)} tickers)")
+        print("=" * 65)
+        if sectors_map:
+            for sector, syms in sectors_map.items():
+                print(f"\n[{sector}] ({len(syms)} stocks):")
+                print("  " + ", ".join(syms))
+        else:
+            for i, ticker in enumerate(tickers, 1):
+                print(f" {i:2d}. {ticker}")
+        print("\n" + "=" * 65)
         print("To edit this pool, modify: config/watchlist.json\n")
     else:
         screener = MarketScreener(universe=tickers)
