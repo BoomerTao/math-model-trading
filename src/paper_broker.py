@@ -218,3 +218,46 @@ class PaperBroker:
             "num_positions": len(self.positions),
             "positions": position_details,
         }
+
+
+if __name__ == "__main__":
+    broker = PaperBroker()
+    summary = broker.get_portfolio_summary({})
+
+    print("\n" + "=" * 80)
+    print("                    PAPER TRADING ACCOUNT SUMMARY")
+    print("=" * 80)
+    pnl_sign = "+" if summary["total_pnl"] >= 0 else ""
+    print(f"Total Equity:      ${summary['total_equity']:>12,.2f}")
+    print(f"Available Cash:    ${summary['cash']:>12,.2f}")
+    print(f"Holdings Value:    ${summary['holdings_value']:>12,.2f}")
+    print(f"Total PnL:         {pnl_sign}${summary['total_pnl']:>11,.2f} ({pnl_sign}{summary['total_pnl_pct']:.2f}%)")
+    print(f"Active Positions:  {summary['num_positions']}")
+    print("-" * 80)
+
+    print("\n[ACTIVE OPEN POSITIONS]")
+    if summary["positions"]:
+        print(f"{'Ticker':<7} {'Shares':>9} {'Entry Price':>13} {'Cost Basis':>13} {'Entry Time'}")
+        print("-" * 80)
+        for p in summary["positions"]:
+            pos_info = broker.positions.get(p["ticker"], {})
+            entry_t = pos_info.get("entry_time", "N/A")
+            print(f"{p['ticker']:<7} {p['shares']:>9.2f} ${p['avg_price']:>12.2f} ${p['market_value']:>12,.2f}  {entry_t}")
+    else:
+        print("  No open positions (100% Cash).")
+
+    print("\n" + "=" * 80)
+    print("                    EXECUTED TRADE HISTORY LEDGER")
+    print("=" * 80)
+    if broker.trade_history:
+        print(f"{'Timestamp':<24} {'Action':<6} {'Ticker':<7} {'Shares':>9} {'Price':>9} {'Total':>11} {'Reason'}")
+        print("-" * 80)
+        for t in broker.trade_history:
+            print(
+                f"{t['timestamp']:<24} {t['action']:<6} {t['ticker']:<7} "
+                f"{t['shares']:>9.2f} ${t['exec_price']:>8.2f} ${t['total_value']:>10,.2f}  {t.get('reason', '')}"
+            )
+    else:
+        print("  No trades executed yet.")
+    print("=" * 80 + "\n")
+
