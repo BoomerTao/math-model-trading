@@ -309,12 +309,66 @@ def generate_dashboard_html(portfolio_file: str = "data/paper_portfolio.json") -
     return html_content
 
 
+def open_in_browser(target: str) -> None:
+    """Open URL or file path in default browser reliably across platforms."""
+    try:
+        if sys.platform == "win32" and not target.startswith("http"):
+            os.startfile(target)
+        else:
+            webbrowser.open(target)
+    except Exception:
+        if sys.platform == "win32":
+            os.system(f'start "" "{target}"')
+        else:
+            webbrowser.open(target)
+
+
+def run_local_server(port: int = 8050, portfolio_file: str = "data/paper_portfolio.json") -> None:
+    """Run lightweight local HTTP server serving live auto-updating dashboard."""
+    import http.server
+    import socketserver
+
+    class LiveDashboardHandler(http.server.BaseHTTPRequestHandler):
+        def do_GET(self):
+            html = generate_dashboard_html(portfolio_file=portfolio_file)
+            # Add auto-refresh meta tag every 15 seconds
+            html = html.replace("<head>", '<head>\n  <meta http-equiv="refresh" content="15">')
+            self.send_response(200)
+            self.send_header("Content-type", "text/html; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(html.encode("utf-8"))
+
+        def log_message(self, format, *args):
+            # Silence default request logging to keep console clean
+            return
+
+    server_url = f"http://localhost:{port}"
+    print(f"\n[*] Live Dashboard Server running at: {server_url}")
+    print("[*] (Auto-refreshes every 15 seconds with latest portfolio trades)")
+    print("[*] Press Ctrl+C in terminal to stop server.\n")
+
+    open_in_browser(server_url)
+
+    socketserver.TCPServer.allow_reuse_address = True
+    with socketserver.TCPServer(("", port), LiveDashboardHandler) as httpd:
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\n[*] Dashboard server stopped.")
+
+
 def main():
     parser = argparse.ArgumentParser(description="AI Trading Bot Intraday Dashboard")
     parser.add_argument("--portfolio", type=str, default="data/paper_portfolio.json", help="Path to portfolio file")
     parser.add_argument("--output", type=str, default="data/dashboard.html", help="Path to output HTML file")
+    parser.add_argument("--server", action="store_true", help="Run live auto-refreshing HTTP server on http://localhost:8050")
+    parser.add_argument("--port", type=int, default=8050, help="Server port (default: 8050)")
     parser.add_argument("--no-browser", action="store_true", help="Do not open browser automatically")
     args = parser.parse_args()
+
+    if args.server:
+        run_local_server(port=args.port, portfolio_file=args.portfolio)
+        return
 
     html = generate_dashboard_html(portfolio_file=args.portfolio)
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
@@ -326,7 +380,7 @@ def main():
 
     if not args.no_browser:
         print("[*] Opening in your web browser...")
-        webbrowser.open(f"file:///{abs_path}")
+        open_in_browser(abs_path)
 
 
 if __name__ == "__main__":
