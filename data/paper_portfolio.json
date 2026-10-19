@@ -3,19 +3,19 @@
   "cash": 0.0,
   "positions": {
     "MDB": {
-      "qty": 90.80326423560213,
-      "avg_price": 366.67323522949215,
-      "entry_time": "2026-10-16 19:50:25 UTC"
+      "qty": 95.9267064843042,
+      "avg_price": 337.73879232788084,
+      "entry_time": "2026-10-19 19:29:25 UTC"
     },
-    "VST": {
-      "qty": 215.85579437114197,
-      "avg_price": 154.24708316802977,
-      "entry_time": "2026-10-16 19:50:25 UTC"
+    "CORZ": {
+      "qty": 2402.224043779351,
+      "avg_price": 13.486739542007445,
+      "entry_time": "2026-10-19 19:29:25 UTC"
     },
-    "AVGO": {
-      "qty": 96.64707902508205,
-      "avg_price": 344.50215156555174,
-      "entry_time": "2026-10-16 19:50:25 UTC"
+    "ANET": {
+      "qty": 182.96971291798909,
+      "avg_price": 177.0684857254028,
+      "entry_time": "2026-10-19 19:29:25 UTC"
     }
   },
   "trade_history": [
@@ -178,7 +178,64 @@
       "exec_price": 344.5,
       "total_value": 33295.13,
       "reason": "Top #3 rank allocation (P(Up)=58.1%)"
+    },
+    {
+      "timestamp": "2026-10-19 19:29:25 UTC",
+      "action": "SELL",
+      "ticker": "MDB",
+      "shares": 90.8033,
+      "exec_price": 337.4,
+      "total_value": 30637.13,
+      "realized_pnl": -2657.99,
+      "reason": "Stop-loss hit (-7.9% <= -5%)"
+    },
+    {
+      "timestamp": "2026-10-19 19:29:25 UTC",
+      "action": "SELL",
+      "ticker": "VST",
+      "shares": 215.8558,
+      "exec_price": 154.17,
+      "total_value": 33279.11,
+      "realized_pnl": -16.02,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-19 19:29:25 UTC",
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 96.6471,
+      "exec_price": 344.33,
+      "total_value": 33278.27,
+      "realized_pnl": -16.86,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-19 19:29:25 UTC",
+      "action": "BUY",
+      "ticker": "MDB",
+      "shares": 95.9267,
+      "exec_price": 337.74,
+      "total_value": 32398.17,
+      "reason": "Top #1 rank allocation (P(Up)=57.1%)"
+    },
+    {
+      "timestamp": "2026-10-19 19:29:25 UTC",
+      "action": "BUY",
+      "ticker": "CORZ",
+      "shares": 2402.224,
+      "exec_price": 13.49,
+      "total_value": 32398.17,
+      "reason": "Top #2 rank allocation (P(Up)=66.8%)"
+    },
+    {
+      "timestamp": "2026-10-19 19:29:25 UTC",
+      "action": "BUY",
+      "ticker": "ANET",
+      "shares": 182.9697,
+      "exec_price": 177.07,
+      "total_value": 32398.17,
+      "reason": "Top #3 rank allocation (P(Up)=57.7%)"
     }
   ],
-  "last_updated": "2026-10-16T19:50:25.040207+00:00"
+  "last_updated": "2026-10-19T19:29:25.736684+00:00"
 }
