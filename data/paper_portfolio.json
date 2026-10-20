@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.0,
+  "cash": 358.06,
   "positions": {
-    "MDB": {
-      "qty": 95.9267064843042,
-      "avg_price": 337.73879232788084,
-      "entry_time": "2026-10-19 19:29:25 UTC"
-    },
-    "GOOGL": {
-      "qty": 95.07781419317719,
-      "avg_price": 344.35208267211914,
-      "entry_time": "2026-10-20 18:07:40 UTC"
-    },
     "VST": {
       "qty": 213.8663768444748,
       "avg_price": 149.7748469467163,
       "entry_time": "2026-10-20 18:07:40 UTC"
+    },
+    "ANET": {
+      "qty": 176.86622047465517,
+      "avg_price": 183.04147194671629,
+      "entry_time": "2026-10-20 18:39:24 UTC"
+    },
+    "NTAP": {
+      "qty": 156.03836262714645,
+      "avg_price": 207.4736801147461,
+      "entry_time": "2026-10-20 18:39:24 UTC"
     }
   },
   "trade_history": [
@@ -273,7 +273,45 @@
       "exec_price": 149.77,
       "total_value": 32031.8,
       "reason": "Top #3 rank allocation (P(Up)=51.5%)"
+    },
+    {
+      "timestamp": "2026-10-20 18:39:24 UTC",
+      "action": "SELL",
+      "ticker": "MDB",
+      "shares": 95.9267,
+      "exec_price": 337.57,
+      "total_value": 32382.09,
+      "realized_pnl": -16.08,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-20 18:39:24 UTC",
+      "action": "SELL",
+      "ticker": "GOOGL",
+      "shares": 95.0778,
+      "exec_price": 344.18,
+      "total_value": 32723.68,
+      "realized_pnl": -16.57,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-20 18:39:24 UTC",
+      "action": "BUY",
+      "ticker": "ANET",
+      "shares": 176.8662,
+      "exec_price": 183.04,
+      "total_value": 32373.85,
+      "reason": "Top #1 rank allocation (P(Up)=57.9%)"
+    },
+    {
+      "timestamp": "2026-10-20 18:39:24 UTC",
+      "action": "BUY",
+      "ticker": "NTAP",
+      "shares": 156.0384,
+      "exec_price": 207.47,
+      "total_value": 32373.85,
+      "reason": "Top #3 rank allocation (P(Up)=57.3%)"
     }
   ],
-  "last_updated": "2026-10-20T18:07:40.033094+00:00"
+  "last_updated": "2026-10-20T18:39:24.910893+00:00"
 }
