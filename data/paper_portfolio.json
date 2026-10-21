@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 358.06,
+  "cash": 0.0,
   "positions": {
-    "VST": {
-      "qty": 213.8663768444748,
-      "avg_price": 149.7748469467163,
-      "entry_time": "2026-10-20 18:07:40 UTC"
+    "PLTR": {
+      "qty": 167.94528821309723,
+      "avg_price": 192.69630610656736,
+      "entry_time": "2026-10-21 18:15:58 UTC"
     },
-    "ANET": {
-      "qty": 176.86622047465517,
-      "avg_price": 183.04147194671629,
-      "entry_time": "2026-10-20 18:39:24 UTC"
+    "GOOGL": {
+      "qty": 95.05778667843116,
+      "avg_price": 340.4501387786865,
+      "entry_time": "2026-10-21 18:15:58 UTC"
     },
-    "NTAP": {
-      "qty": 156.03836262714645,
-      "avg_price": 207.4736801147461,
-      "entry_time": "2026-10-20 18:39:24 UTC"
+    "STX": {
+      "qty": 47.91116274044702,
+      "avg_price": 675.4675698852539,
+      "entry_time": "2026-10-21 18:15:58 UTC"
     }
   },
   "trade_history": [
@@ -311,7 +311,64 @@
       "exec_price": 207.47,
       "total_value": 32373.85,
       "reason": "Top #3 rank allocation (P(Up)=57.3%)"
+    },
+    {
+      "timestamp": "2026-10-21 18:15:58 UTC",
+      "action": "SELL",
+      "ticker": "VST",
+      "shares": 213.8664,
+      "exec_price": 149.7,
+      "total_value": 32014.75,
+      "realized_pnl": -17.05,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-21 18:15:58 UTC",
+      "action": "SELL",
+      "ticker": "ANET",
+      "shares": 176.8662,
+      "exec_price": 182.95,
+      "total_value": 32357.41,
+      "realized_pnl": -16.45,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-21 18:15:58 UTC",
+      "action": "SELL",
+      "ticker": "NTAP",
+      "shares": 156.0384,
+      "exec_price": 207.37,
+      "total_value": 32357.09,
+      "realized_pnl": -16.76,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-21 18:15:58 UTC",
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 167.9453,
+      "exec_price": 192.7,
+      "total_value": 32362.44,
+      "reason": "Top #1 rank allocation (P(Up)=58.8%)"
+    },
+    {
+      "timestamp": "2026-10-21 18:15:58 UTC",
+      "action": "BUY",
+      "ticker": "GOOGL",
+      "shares": 95.0578,
+      "exec_price": 340.45,
+      "total_value": 32362.44,
+      "reason": "Top #2 rank allocation (P(Up)=59.2%)"
+    },
+    {
+      "timestamp": "2026-10-21 18:15:58 UTC",
+      "action": "BUY",
+      "ticker": "STX",
+      "shares": 47.9112,
+      "exec_price": 675.47,
+      "total_value": 32362.44,
+      "reason": "Top #3 rank allocation (P(Up)=55.1%)"
     }
   ],
-  "last_updated": "2026-10-20T18:39:24.910893+00:00"
+  "last_updated": "2026-10-21T18:15:58.479152+00:00"
 }
