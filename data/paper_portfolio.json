@@ -1,6 +1,6 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.0,
+  "cash": 0.07,
   "positions": {
     "PLTR": {
       "qty": 167.94528821309723,
@@ -12,10 +12,10 @@
       "avg_price": 340.4501387786865,
       "entry_time": "2026-10-21 18:15:58 UTC"
     },
-    "STX": {
-      "qty": 47.91116274044702,
-      "avg_price": 675.4675698852539,
-      "entry_time": "2026-10-21 18:15:58 UTC"
+    "DELL": {
+      "qty": 70.04535727433684,
+      "avg_price": 461.790777557373,
+      "entry_time": "2026-10-21 18:50:56 UTC"
     }
   },
   "trade_history": [
@@ -368,7 +368,26 @@
       "exec_price": 675.47,
       "total_value": 32362.44,
       "reason": "Top #3 rank allocation (P(Up)=55.1%)"
+    },
+    {
+      "timestamp": "2026-10-21 18:50:56 UTC",
+      "action": "SELL",
+      "ticker": "STX",
+      "shares": 47.9112,
+      "exec_price": 675.13,
+      "total_value": 32346.37,
+      "realized_pnl": -16.06,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-21 18:50:56 UTC",
+      "action": "BUY",
+      "ticker": "DELL",
+      "shares": 70.0454,
+      "exec_price": 461.79,
+      "total_value": 32346.3,
+      "reason": "Top #3 rank allocation (P(Up)=56.0%)"
     }
   ],
-  "last_updated": "2026-10-21T18:15:58.479152+00:00"
+  "last_updated": "2026-10-21T18:50:56.280711+00:00"
 }
