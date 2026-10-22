@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.07,
+  "cash": 0.0,
   "positions": {
-    "PLTR": {
-      "qty": 167.94528821309723,
-      "avg_price": 192.69630610656736,
-      "entry_time": "2026-10-21 18:15:58 UTC"
+    "MDB": {
+      "qty": 82.72533385685064,
+      "avg_price": 390.94537499999996,
+      "entry_time": "2026-10-22 18:10:43 UTC"
     },
-    "GOOGL": {
-      "qty": 95.05778667843116,
-      "avg_price": 340.4501387786865,
-      "entry_time": "2026-10-21 18:15:58 UTC"
+    "ASML": {
+      "qty": 19.27901122699721,
+      "avg_price": 1677.528286376953,
+      "entry_time": "2026-10-22 18:10:43 UTC"
     },
-    "DELL": {
-      "qty": 70.04535727433684,
-      "avg_price": 461.790777557373,
-      "entry_time": "2026-10-21 18:50:56 UTC"
+    "WDC": {
+      "qty": 85.40044746658117,
+      "avg_price": 378.6992647705078,
+      "entry_time": "2026-10-22 18:10:43 UTC"
     }
   },
   "trade_history": [
@@ -387,7 +387,64 @@
       "exec_price": 461.79,
       "total_value": 32346.3,
       "reason": "Top #3 rank allocation (P(Up)=56.0%)"
+    },
+    {
+      "timestamp": "2026-10-22 18:10:43 UTC",
+      "action": "SELL",
+      "ticker": "PLTR",
+      "shares": 167.9453,
+      "exec_price": 192.6,
+      "total_value": 32346.88,
+      "realized_pnl": -15.56,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-22 18:10:43 UTC",
+      "action": "SELL",
+      "ticker": "GOOGL",
+      "shares": 95.0578,
+      "exec_price": 340.28,
+      "total_value": 32346.24,
+      "realized_pnl": -16.19,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-22 18:10:43 UTC",
+      "action": "SELL",
+      "ticker": "DELL",
+      "shares": 70.0454,
+      "exec_price": 461.56,
+      "total_value": 32330.07,
+      "realized_pnl": -16.23,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-22 18:10:43 UTC",
+      "action": "BUY",
+      "ticker": "MDB",
+      "shares": 82.7253,
+      "exec_price": 390.95,
+      "total_value": 32341.09,
+      "reason": "Top #1 rank allocation (P(Up)=62.9%)"
+    },
+    {
+      "timestamp": "2026-10-22 18:10:43 UTC",
+      "action": "BUY",
+      "ticker": "ASML",
+      "shares": 19.279,
+      "exec_price": 1677.53,
+      "total_value": 32341.09,
+      "reason": "Top #2 rank allocation (P(Up)=62.7%)"
+    },
+    {
+      "timestamp": "2026-10-22 18:10:43 UTC",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 85.4004,
+      "exec_price": 378.7,
+      "total_value": 32341.09,
+      "reason": "Top #3 rank allocation (P(Up)=54.0%)"
     }
   ],
-  "last_updated": "2026-10-21T18:50:56.280711+00:00"
+  "last_updated": "2026-10-22T18:10:43.591867+00:00"
 }
