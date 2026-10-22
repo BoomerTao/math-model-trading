@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.0,
+  "cash": 0.03,
   "positions": {
     "MDB": {
       "qty": 82.72533385685064,
       "avg_price": 390.94537499999996,
       "entry_time": "2026-10-22 18:10:43 UTC"
     },
-    "ASML": {
-      "qty": 19.27901122699721,
-      "avg_price": 1677.528286376953,
-      "entry_time": "2026-10-22 18:10:43 UTC"
+    "MSFT": {
+      "qty": 60.622562833619256,
+      "avg_price": 533.2164872131348,
+      "entry_time": "2026-10-22 18:45:04 UTC"
     },
-    "WDC": {
-      "qty": 85.40044746658117,
-      "avg_price": 378.6992647705078,
-      "entry_time": "2026-10-22 18:10:43 UTC"
+    "AMZN": {
+      "qty": 123.14211305972006,
+      "avg_price": 262.5011801147461,
+      "entry_time": "2026-10-22 18:45:04 UTC"
     }
   },
   "trade_history": [
@@ -444,7 +444,45 @@
       "exec_price": 378.7,
       "total_value": 32341.09,
       "reason": "Top #3 rank allocation (P(Up)=54.0%)"
+    },
+    {
+      "timestamp": "2026-10-22 18:45:04 UTC",
+      "action": "SELL",
+      "ticker": "ASML",
+      "shares": 19.279,
+      "exec_price": 1676.69,
+      "total_value": 32324.95,
+      "realized_pnl": -16.14,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-22 18:45:04 UTC",
+      "action": "SELL",
+      "ticker": "WDC",
+      "shares": 85.4004,
+      "exec_price": 378.51,
+      "total_value": 32324.98,
+      "realized_pnl": -16.11,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-22 18:45:04 UTC",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 60.6226,
+      "exec_price": 533.22,
+      "total_value": 32324.95,
+      "reason": "Top #2 rank allocation (P(Up)=53.9%)"
+    },
+    {
+      "timestamp": "2026-10-22 18:45:04 UTC",
+      "action": "BUY",
+      "ticker": "AMZN",
+      "shares": 123.1421,
+      "exec_price": 262.5,
+      "total_value": 32324.95,
+      "reason": "Top #3 rank allocation (P(Up)=55.6%)"
     }
   ],
-  "last_updated": "2026-10-22T18:10:43.591867+00:00"
+  "last_updated": "2026-10-22T18:45:04.834035+00:00"
 }
