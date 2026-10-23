@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 485.18,
+  "cash": 245.24,
   "positions": {
-    "MSFT": {
-      "qty": 60.622562833619256,
-      "avg_price": 533.2164872131348,
-      "entry_time": "2026-10-22 18:45:04 UTC"
-    },
-    "VST": {
-      "qty": 227.6387398596799,
-      "avg_price": 140.9004168319702,
-      "entry_time": "2026-10-23 18:01:36 UTC"
-    },
     "WDC": {
       "qty": 90.5117703218095,
       "avg_price": 354.3670974426269,
       "entry_time": "2026-10-23 18:01:36 UTC"
+    },
+    "TSM": {
+      "qty": 78.30110131106966,
+      "avg_price": 412.55618110656735,
+      "entry_time": "2026-10-23 18:41:39 UTC"
+    },
+    "ORCL": {
+      "qty": 257.18862010569023,
+      "avg_price": 125.6027709159851,
+      "entry_time": "2026-10-23 18:41:39 UTC"
     }
   },
   "trade_history": [
@@ -520,7 +520,45 @@
       "exec_price": 354.37,
       "total_value": 32074.39,
       "reason": "Top #2 rank allocation (P(Up)=54.7%)"
+    },
+    {
+      "timestamp": "2026-10-23 18:41:39 UTC",
+      "action": "SELL",
+      "ticker": "MSFT",
+      "shares": 60.6226,
+      "exec_price": 532.95,
+      "total_value": 32309.0,
+      "realized_pnl": -15.95,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-23 18:41:39 UTC",
+      "action": "SELL",
+      "ticker": "VST",
+      "shares": 227.6387,
+      "exec_price": 140.83,
+      "total_value": 32058.26,
+      "realized_pnl": -16.13,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-23 18:41:39 UTC",
+      "action": "BUY",
+      "ticker": "TSM",
+      "shares": 78.3011,
+      "exec_price": 412.56,
+      "total_value": 32303.6,
+      "reason": "Top #1 rank allocation (P(Up)=65.0%)"
+    },
+    {
+      "timestamp": "2026-10-23 18:41:39 UTC",
+      "action": "BUY",
+      "ticker": "ORCL",
+      "shares": 257.1886,
+      "exec_price": 125.6,
+      "total_value": 32303.6,
+      "reason": "Top #3 rank allocation (P(Up)=55.4%)"
     }
   ],
-  "last_updated": "2026-10-23T18:01:36.571067+00:00"
+  "last_updated": "2026-10-23T18:41:39.960016+00:00"
 }
