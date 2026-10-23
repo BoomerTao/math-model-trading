@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.03,
+  "cash": 485.18,
   "positions": {
-    "MDB": {
-      "qty": 82.72533385685064,
-      "avg_price": 390.94537499999996,
-      "entry_time": "2026-10-22 18:10:43 UTC"
-    },
     "MSFT": {
       "qty": 60.622562833619256,
       "avg_price": 533.2164872131348,
       "entry_time": "2026-10-22 18:45:04 UTC"
     },
-    "AMZN": {
-      "qty": 123.14211305972006,
-      "avg_price": 262.5011801147461,
-      "entry_time": "2026-10-22 18:45:04 UTC"
+    "VST": {
+      "qty": 227.6387398596799,
+      "avg_price": 140.9004168319702,
+      "entry_time": "2026-10-23 18:01:36 UTC"
+    },
+    "WDC": {
+      "qty": 90.5117703218095,
+      "avg_price": 354.3670974426269,
+      "entry_time": "2026-10-23 18:01:36 UTC"
     }
   },
   "trade_history": [
@@ -482,7 +482,45 @@
       "exec_price": 262.5,
       "total_value": 32324.95,
       "reason": "Top #3 rank allocation (P(Up)=55.6%)"
+    },
+    {
+      "timestamp": "2026-10-23 18:01:36 UTC",
+      "action": "SELL",
+      "ticker": "MDB",
+      "shares": 82.7253,
+      "exec_price": 390.75,
+      "total_value": 32325.3,
+      "realized_pnl": -15.79,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-23 18:01:36 UTC",
+      "action": "SELL",
+      "ticker": "AMZN",
+      "shares": 123.1421,
+      "exec_price": 262.37,
+      "total_value": 32308.64,
+      "realized_pnl": -16.31,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-23 18:01:36 UTC",
+      "action": "BUY",
+      "ticker": "VST",
+      "shares": 227.6387,
+      "exec_price": 140.9,
+      "total_value": 32074.39,
+      "reason": "Top #1 rank allocation (P(Up)=69.0%)"
+    },
+    {
+      "timestamp": "2026-10-23 18:01:36 UTC",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 90.5118,
+      "exec_price": 354.37,
+      "total_value": 32074.39,
+      "reason": "Top #2 rank allocation (P(Up)=54.7%)"
     }
   ],
-  "last_updated": "2026-10-22T18:45:04.834035+00:00"
+  "last_updated": "2026-10-23T18:01:36.571067+00:00"
 }
