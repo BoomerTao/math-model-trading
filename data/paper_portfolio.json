@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 245.24,
+  "cash": -0.0,
   "positions": {
     "WDC": {
-      "qty": 90.5117703218095,
-      "avg_price": 354.3670974426269,
+      "qty": 93.1947344490753,
+      "avg_price": 354.0640882041069,
       "entry_time": "2026-10-23 18:01:36 UTC"
-    },
-    "TSM": {
-      "qty": 78.30110131106966,
-      "avg_price": 412.55618110656735,
-      "entry_time": "2026-10-23 18:41:39 UTC"
     },
     "ORCL": {
       "qty": 257.18862010569023,
       "avg_price": 125.6027709159851,
       "entry_time": "2026-10-23 18:41:39 UTC"
+    },
+    "CORZ": {
+      "qty": 2411.807389467293,
+      "avg_price": 13.10655038166046,
+      "entry_time": "2026-10-26 19:34:13 UTC"
     }
   },
   "trade_history": [
@@ -558,7 +558,35 @@
       "exec_price": 125.6,
       "total_value": 32303.6,
       "reason": "Top #3 rank allocation (P(Up)=55.4%)"
+    },
+    {
+      "timestamp": "2026-10-26 19:34:13 UTC",
+      "action": "SELL",
+      "ticker": "TSM",
+      "shares": 78.3011,
+      "exec_price": 412.35,
+      "total_value": 32287.75,
+      "realized_pnl": -15.85,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-26 19:34:13 UTC",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 2.683,
+      "exec_price": 343.84,
+      "total_value": 922.52,
+      "reason": "Top #1 rank allocation (P(Up)=53.0%)"
+    },
+    {
+      "timestamp": "2026-10-26 19:34:13 UTC",
+      "action": "BUY",
+      "ticker": "CORZ",
+      "shares": 2411.8074,
+      "exec_price": 13.11,
+      "total_value": 31610.48,
+      "reason": "Top #2 rank allocation (P(Up)=53.7%)"
     }
   ],
-  "last_updated": "2026-10-23T18:41:39.960016+00:00"
+  "last_updated": "2026-10-26T19:34:13.541957+00:00"
 }
