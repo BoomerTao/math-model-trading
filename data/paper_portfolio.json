@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "STX": {
-      "qty": 50.09822678317189,
-      "avg_price": 644.5321269836426,
-      "entry_time": "2026-10-27 18:57:29 UTC"
+    "WDC": {
+      "qty": 90.57771273716435,
+      "avg_price": 356.3080698852539,
+      "entry_time": "2026-10-27 19:35:05 UTC"
     },
-    "AMZN": {
-      "qty": 129.56674395305257,
-      "avg_price": 249.21454133605957,
-      "entry_time": "2026-10-27 18:57:29 UTC"
+    "AMD": {
+      "qty": 60.71645742463082,
+      "avg_price": 531.5456693115234,
+      "entry_time": "2026-10-27 19:35:05 UTC"
     },
-    "ASML": {
-      "qty": 20.286491471181478,
-      "avg_price": 1591.6954744262694,
-      "entry_time": "2026-10-27 18:57:29 UTC"
+    "CORZ": {
+      "qty": 2387.67140879835,
+      "avg_price": 13.516755228996276,
+      "entry_time": "2026-10-27 19:35:05 UTC"
     }
   },
   "trade_history": [
@@ -643,7 +643,64 @@
       "exec_price": 1591.7,
       "total_value": 32289.92,
       "reason": "Top #3 rank allocation (P(Up)=54.1%)"
+    },
+    {
+      "timestamp": "2026-10-27 19:35:05 UTC",
+      "action": "SELL",
+      "ticker": "STX",
+      "shares": 50.0982,
+      "exec_price": 644.21,
+      "total_value": 32273.67,
+      "realized_pnl": -16.25,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-27 19:35:05 UTC",
+      "action": "SELL",
+      "ticker": "AMZN",
+      "shares": 129.5667,
+      "exec_price": 249.09,
+      "total_value": 32273.18,
+      "realized_pnl": -16.73,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-27 19:35:05 UTC",
+      "action": "SELL",
+      "ticker": "ASML",
+      "shares": 20.2865,
+      "exec_price": 1590.9,
+      "total_value": 32273.86,
+      "realized_pnl": -16.05,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-27 19:35:05 UTC",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 90.5777,
+      "exec_price": 356.31,
+      "total_value": 32273.57,
+      "reason": "Top #1 rank allocation (P(Up)=58.3%)"
+    },
+    {
+      "timestamp": "2026-10-27 19:35:05 UTC",
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 60.7165,
+      "exec_price": 531.55,
+      "total_value": 32273.57,
+      "reason": "Top #2 rank allocation (P(Up)=62.8%)"
+    },
+    {
+      "timestamp": "2026-10-27 19:35:05 UTC",
+      "action": "BUY",
+      "ticker": "CORZ",
+      "shares": 2387.6714,
+      "exec_price": 13.52,
+      "total_value": 32273.57,
+      "reason": "Top #3 rank allocation (P(Up)=54.0%)"
     }
   ],
-  "last_updated": "2026-10-27T18:57:29.232077+00:00"
+  "last_updated": "2026-10-27T19:35:05.386530+00:00"
 }
