@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "TSM": {
-      "qty": 73.80694106117369,
-      "avg_price": 437.0884301147461,
-      "entry_time": "2026-10-28 19:06:36 UTC"
+    "WULF": {
+      "qty": 2545.6432175140876,
+      "avg_price": 12.666329847335815,
+      "entry_time": "2026-10-28 19:48:13 UTC"
     },
-    "MU": {
-      "qty": 34.717297947772714,
-      "avg_price": 929.2243897705077,
-      "entry_time": "2026-10-28 19:06:36 UTC"
+    "AMAT": {
+      "qty": 81.39783128701927,
+      "avg_price": 396.1279576721191,
+      "entry_time": "2026-10-28 19:48:13 UTC"
     },
-    "STX": {
-      "qty": 48.28036109864379,
-      "avg_price": 668.1839005737304,
-      "entry_time": "2026-10-28 19:06:36 UTC"
+    "CORZ": {
+      "qty": 2259.22446483818,
+      "avg_price": 14.272132843494415,
+      "entry_time": "2026-10-28 19:48:13 UTC"
     }
   },
   "trade_history": [
@@ -757,7 +757,64 @@
       "exec_price": 668.18,
       "total_value": 32260.16,
       "reason": "Top #3 rank allocation (P(Up)=54.4%)"
+    },
+    {
+      "timestamp": "2026-10-28 19:48:13 UTC",
+      "action": "SELL",
+      "ticker": "TSM",
+      "shares": 73.8069,
+      "exec_price": 436.87,
+      "total_value": 32244.15,
+      "realized_pnl": -16.01,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-28 19:48:13 UTC",
+      "action": "SELL",
+      "ticker": "MU",
+      "shares": 34.7173,
+      "exec_price": 928.76,
+      "total_value": 32243.88,
+      "realized_pnl": -16.28,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-28 19:48:13 UTC",
+      "action": "SELL",
+      "ticker": "STX",
+      "shares": 48.2804,
+      "exec_price": 667.85,
+      "total_value": 32243.84,
+      "realized_pnl": -16.32,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-28 19:48:13 UTC",
+      "action": "BUY",
+      "ticker": "WULF",
+      "shares": 2545.6432,
+      "exec_price": 12.67,
+      "total_value": 32243.96,
+      "reason": "Top #1 rank allocation (P(Up)=54.2%)"
+    },
+    {
+      "timestamp": "2026-10-28 19:48:13 UTC",
+      "action": "BUY",
+      "ticker": "AMAT",
+      "shares": 81.3978,
+      "exec_price": 396.13,
+      "total_value": 32243.96,
+      "reason": "Top #2 rank allocation (P(Up)=58.9%)"
+    },
+    {
+      "timestamp": "2026-10-28 19:48:13 UTC",
+      "action": "BUY",
+      "ticker": "CORZ",
+      "shares": 2259.2245,
+      "exec_price": 14.27,
+      "total_value": 32243.95,
+      "reason": "Top #3 rank allocation (P(Up)=54.4%)"
     }
   ],
-  "last_updated": "2026-10-28T19:06:36.166325+00:00"
+  "last_updated": "2026-10-28T19:48:13.865447+00:00"
 }
