@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "WDC": {
-      "qty": 90.57771273716435,
-      "avg_price": 356.3080698852539,
-      "entry_time": "2026-10-27 19:35:05 UTC"
+    "TSM": {
+      "qty": 73.80694106117369,
+      "avg_price": 437.0884301147461,
+      "entry_time": "2026-10-28 19:06:36 UTC"
     },
-    "AMD": {
-      "qty": 60.71645742463082,
-      "avg_price": 531.5456693115234,
-      "entry_time": "2026-10-27 19:35:05 UTC"
+    "MU": {
+      "qty": 34.717297947772714,
+      "avg_price": 929.2243897705077,
+      "entry_time": "2026-10-28 19:06:36 UTC"
     },
-    "CORZ": {
-      "qty": 2387.67140879835,
-      "avg_price": 13.516755228996276,
-      "entry_time": "2026-10-27 19:35:05 UTC"
+    "STX": {
+      "qty": 48.28036109864379,
+      "avg_price": 668.1839005737304,
+      "entry_time": "2026-10-28 19:06:36 UTC"
     }
   },
   "trade_history": [
@@ -700,7 +700,64 @@
       "exec_price": 13.52,
       "total_value": 32273.57,
       "reason": "Top #3 rank allocation (P(Up)=54.0%)"
+    },
+    {
+      "timestamp": "2026-10-28 19:06:36 UTC",
+      "action": "SELL",
+      "ticker": "WDC",
+      "shares": 90.5777,
+      "exec_price": 356.13,
+      "total_value": 32257.61,
+      "realized_pnl": -15.96,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-28 19:06:36 UTC",
+      "action": "SELL",
+      "ticker": "AMD",
+      "shares": 60.7165,
+      "exec_price": 531.28,
+      "total_value": 32257.7,
+      "realized_pnl": -15.87,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-28 19:06:36 UTC",
+      "action": "SELL",
+      "ticker": "CORZ",
+      "shares": 2387.6714,
+      "exec_price": 13.51,
+      "total_value": 32265.18,
+      "realized_pnl": -8.39,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-28 19:06:36 UTC",
+      "action": "BUY",
+      "ticker": "TSM",
+      "shares": 73.8069,
+      "exec_price": 437.09,
+      "total_value": 32260.16,
+      "reason": "Top #1 rank allocation (P(Up)=59.3%)"
+    },
+    {
+      "timestamp": "2026-10-28 19:06:36 UTC",
+      "action": "BUY",
+      "ticker": "MU",
+      "shares": 34.7173,
+      "exec_price": 929.22,
+      "total_value": 32260.16,
+      "reason": "Top #2 rank allocation (P(Up)=54.5%)"
+    },
+    {
+      "timestamp": "2026-10-28 19:06:36 UTC",
+      "action": "BUY",
+      "ticker": "STX",
+      "shares": 48.2804,
+      "exec_price": 668.18,
+      "total_value": 32260.16,
+      "reason": "Top #3 rank allocation (P(Up)=54.4%)"
     }
   ],
-  "last_updated": "2026-10-27T19:35:05.386530+00:00"
+  "last_updated": "2026-10-28T19:06:36.166325+00:00"
 }
