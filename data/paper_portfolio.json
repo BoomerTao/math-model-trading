@@ -7,15 +7,15 @@
       "avg_price": 12.666329847335815,
       "entry_time": "2026-10-28 19:48:13 UTC"
     },
-    "AMAT": {
-      "qty": 81.39783128701927,
-      "avg_price": 396.1279576721191,
-      "entry_time": "2026-10-28 19:48:13 UTC"
+    "TSM": {
+      "qty": 74.75314606116918,
+      "avg_price": 439.7297647705078,
+      "entry_time": "2026-10-29 19:12:54 UTC"
     },
-    "CORZ": {
-      "qty": 2259.22446483818,
-      "avg_price": 14.272132843494415,
-      "entry_time": "2026-10-28 19:48:13 UTC"
+    "MU": {
+      "qty": 32.102407027965526,
+      "avg_price": 983.7215954589843,
+      "entry_time": "2026-10-29 19:12:54 UTC"
     }
   },
   "trade_history": [
@@ -814,7 +814,45 @@
       "exec_price": 14.27,
       "total_value": 32243.95,
       "reason": "Top #3 rank allocation (P(Up)=54.4%)"
+    },
+    {
+      "timestamp": "2026-10-29 19:12:54 UTC",
+      "action": "SELL",
+      "ticker": "AMAT",
+      "shares": 81.3978,
+      "exec_price": 395.93,
+      "total_value": 32228.0,
+      "realized_pnl": -15.96,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-29 19:12:54 UTC",
+      "action": "SELL",
+      "ticker": "CORZ",
+      "shares": 2259.2245,
+      "exec_price": 14.26,
+      "total_value": 32223.01,
+      "realized_pnl": -20.94,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-29 19:12:54 UTC",
+      "action": "BUY",
+      "ticker": "TSM",
+      "shares": 74.7531,
+      "exec_price": 439.73,
+      "total_value": 32871.18,
+      "reason": "Top #2 rank allocation (P(Up)=60.2%)"
+    },
+    {
+      "timestamp": "2026-10-29 19:12:54 UTC",
+      "action": "BUY",
+      "ticker": "MU",
+      "shares": 32.1024,
+      "exec_price": 983.72,
+      "total_value": 31579.83,
+      "reason": "Top #3 rank allocation (P(Up)=56.8%)"
     }
   ],
-  "last_updated": "2026-10-28T19:48:13.865447+00:00"
+  "last_updated": "2026-10-29T19:12:54.830544+00:00"
 }
