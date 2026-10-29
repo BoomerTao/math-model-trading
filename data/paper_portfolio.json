@@ -7,15 +7,15 @@
       "avg_price": 12.666329847335815,
       "entry_time": "2026-10-28 19:48:13 UTC"
     },
-    "TSM": {
-      "qty": 74.75314606116918,
-      "avg_price": 439.7297647705078,
-      "entry_time": "2026-10-29 19:12:54 UTC"
+    "ARM": {
+      "qty": 139.2285241449151,
+      "avg_price": 236.0179438934326,
+      "entry_time": "2026-10-29 19:49:06 UTC"
     },
-    "MU": {
-      "qty": 32.102407027965526,
-      "avg_price": 983.7215954589843,
-      "entry_time": "2026-10-29 19:12:54 UTC"
+    "MRVL": {
+      "qty": 125.34295552030805,
+      "avg_price": 251.77581889343261,
+      "entry_time": "2026-10-29 19:49:06 UTC"
     }
   },
   "trade_history": [
@@ -852,7 +852,45 @@
       "exec_price": 983.72,
       "total_value": 31579.83,
       "reason": "Top #3 rank allocation (P(Up)=56.8%)"
+    },
+    {
+      "timestamp": "2026-10-29 19:49:06 UTC",
+      "action": "SELL",
+      "ticker": "TSM",
+      "shares": 74.7531,
+      "exec_price": 439.51,
+      "total_value": 32854.77,
+      "realized_pnl": -16.42,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-29 19:49:06 UTC",
+      "action": "SELL",
+      "ticker": "MU",
+      "shares": 32.1024,
+      "exec_price": 983.23,
+      "total_value": 31563.99,
+      "realized_pnl": -15.84,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-29 19:49:06 UTC",
+      "action": "BUY",
+      "ticker": "ARM",
+      "shares": 139.2285,
+      "exec_price": 236.02,
+      "total_value": 32860.43,
+      "reason": "Top #2 rank allocation (P(Up)=55.7%)"
+    },
+    {
+      "timestamp": "2026-10-29 19:49:06 UTC",
+      "action": "BUY",
+      "ticker": "MRVL",
+      "shares": 125.343,
+      "exec_price": 251.78,
+      "total_value": 31558.33,
+      "reason": "Top #3 rank allocation (P(Up)=60.5%)"
     }
   ],
-  "last_updated": "2026-10-29T19:12:54.830544+00:00"
+  "last_updated": "2026-10-29T19:49:06.695982+00:00"
 }
