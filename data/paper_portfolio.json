@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.0,
+  "cash": -0.0,
   "positions": {
-    "AMAT": {
-      "qty": 76.34606162966813,
-      "avg_price": 421.8708336639404,
-      "entry_time": "2026-10-30 18:51:14 UTC"
+    "WDC": {
+      "qty": 81.37415583243829,
+      "avg_price": 395.6077086639404,
+      "entry_time": "2026-10-30 19:38:16 UTC"
     },
-    "MU": {
-      "qty": 34.45693424102935,
-      "avg_price": 934.7371545410156,
-      "entry_time": "2026-10-30 18:51:14 UTC"
+    "NVDA": {
+      "qty": 150.59512638870007,
+      "avg_price": 213.76683366394042,
+      "entry_time": "2026-10-30 19:38:16 UTC"
     },
-    "SNOW": {
-      "qty": 97.47200908572673,
-      "avg_price": 330.4351240081787,
-      "entry_time": "2026-10-30 18:51:14 UTC"
+    "IREN": {
+      "qty": 1225.7581391620959,
+      "avg_price": 26.263125,
+      "entry_time": "2026-10-30 19:38:16 UTC"
     }
   },
   "trade_history": [
@@ -947,7 +947,64 @@
       "exec_price": 330.44,
       "total_value": 32208.18,
       "reason": "Top #3 rank allocation (P(Up)=63.2%)"
+    },
+    {
+      "timestamp": "2026-10-30 19:38:16 UTC",
+      "action": "SELL",
+      "ticker": "AMAT",
+      "shares": 76.3461,
+      "exec_price": 421.66,
+      "total_value": 32192.01,
+      "realized_pnl": -16.17,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-30 19:38:16 UTC",
+      "action": "SELL",
+      "ticker": "MU",
+      "shares": 34.4569,
+      "exec_price": 934.27,
+      "total_value": 32192.17,
+      "realized_pnl": -16.01,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-30 19:38:16 UTC",
+      "action": "SELL",
+      "ticker": "SNOW",
+      "shares": 97.472,
+      "exec_price": 330.27,
+      "total_value": 32192.55,
+      "realized_pnl": -15.63,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-30 19:38:16 UTC",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 81.3742,
+      "exec_price": 395.61,
+      "total_value": 32192.24,
+      "reason": "Top #1 rank allocation (P(Up)=56.1%)"
+    },
+    {
+      "timestamp": "2026-10-30 19:38:16 UTC",
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 150.5951,
+      "exec_price": 213.77,
+      "total_value": 32192.24,
+      "reason": "Top #2 rank allocation (P(Up)=57.4%)"
+    },
+    {
+      "timestamp": "2026-10-30 19:38:16 UTC",
+      "action": "BUY",
+      "ticker": "IREN",
+      "shares": 1225.7581,
+      "exec_price": 26.26,
+      "total_value": 32192.24,
+      "reason": "Top #3 rank allocation (P(Up)=59.6%)"
     }
   ],
-  "last_updated": "2026-10-30T18:51:14.566862+00:00"
+  "last_updated": "2026-10-30T19:38:16.427073+00:00"
 }
