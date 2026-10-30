@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "WULF": {
-      "qty": 2545.6432175140876,
-      "avg_price": 12.666329847335815,
-      "entry_time": "2026-10-28 19:48:13 UTC"
+    "AMAT": {
+      "qty": 76.34606162966813,
+      "avg_price": 421.8708336639404,
+      "entry_time": "2026-10-30 18:51:14 UTC"
     },
-    "ARM": {
-      "qty": 139.2285241449151,
-      "avg_price": 236.0179438934326,
-      "entry_time": "2026-10-29 19:49:06 UTC"
+    "MU": {
+      "qty": 34.45693424102935,
+      "avg_price": 934.7371545410156,
+      "entry_time": "2026-10-30 18:51:14 UTC"
     },
-    "MRVL": {
-      "qty": 125.34295552030805,
-      "avg_price": 251.77581889343261,
-      "entry_time": "2026-10-29 19:49:06 UTC"
+    "SNOW": {
+      "qty": 97.47200908572673,
+      "avg_price": 330.4351240081787,
+      "entry_time": "2026-10-30 18:51:14 UTC"
     }
   },
   "trade_history": [
@@ -890,7 +890,64 @@
       "exec_price": 251.78,
       "total_value": 31558.33,
       "reason": "Top #3 rank allocation (P(Up)=60.5%)"
+    },
+    {
+      "timestamp": "2026-10-30 18:51:14 UTC",
+      "action": "SELL",
+      "ticker": "WULF",
+      "shares": 2545.6432,
+      "exec_price": 12.66,
+      "total_value": 32237.17,
+      "realized_pnl": -6.78,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-30 18:51:14 UTC",
+      "action": "SELL",
+      "ticker": "ARM",
+      "shares": 139.2285,
+      "exec_price": 235.9,
+      "total_value": 32844.29,
+      "realized_pnl": -16.14,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-30 18:51:14 UTC",
+      "action": "SELL",
+      "ticker": "MRVL",
+      "shares": 125.343,
+      "exec_price": 251.65,
+      "total_value": 31543.07,
+      "realized_pnl": -15.26,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-10-30 18:51:14 UTC",
+      "action": "BUY",
+      "ticker": "AMAT",
+      "shares": 76.3461,
+      "exec_price": 421.87,
+      "total_value": 32208.18,
+      "reason": "Top #1 rank allocation (P(Up)=58.7%)"
+    },
+    {
+      "timestamp": "2026-10-30 18:51:14 UTC",
+      "action": "BUY",
+      "ticker": "MU",
+      "shares": 34.4569,
+      "exec_price": 934.74,
+      "total_value": 32208.18,
+      "reason": "Top #2 rank allocation (P(Up)=54.1%)"
+    },
+    {
+      "timestamp": "2026-10-30 18:51:14 UTC",
+      "action": "BUY",
+      "ticker": "SNOW",
+      "shares": 97.472,
+      "exec_price": 330.44,
+      "total_value": 32208.18,
+      "reason": "Top #3 rank allocation (P(Up)=63.2%)"
     }
   ],
-  "last_updated": "2026-10-29T19:49:06.695982+00:00"
+  "last_updated": "2026-10-30T18:51:14.566862+00:00"
 }
