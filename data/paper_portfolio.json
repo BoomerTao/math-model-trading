@@ -7,15 +7,15 @@
       "avg_price": 30.455220534324646,
       "entry_time": "2026-11-03 20:18:08 UTC"
     },
-    "CRWD": {
-      "qty": 126.60314581379171,
-      "avg_price": 241.93090255737303,
-      "entry_time": "2026-11-03 20:18:08 UTC"
+    "NTAP": {
+      "qty": 165.1656318071607,
+      "avg_price": 185.35262450408933,
+      "entry_time": "2026-11-03 20:35:50 UTC"
     },
-    "WDC": {
-      "qty": 90.41585380088542,
-      "avg_price": 338.75929133605956,
-      "entry_time": "2026-11-03 20:18:08 UTC"
+    "MDB": {
+      "qty": 92.60225335903112,
+      "avg_price": 330.5952076721191,
+      "entry_time": "2026-11-03 20:35:50 UTC"
     }
   },
   "trade_history": [
@@ -1061,7 +1061,45 @@
       "exec_price": 338.76,
       "total_value": 30629.21,
       "reason": "Top #3 rank allocation (P(Up)=63.7%)"
+    },
+    {
+      "timestamp": "2026-11-03 20:35:50 UTC",
+      "action": "SELL",
+      "ticker": "CRWD",
+      "shares": 126.6031,
+      "exec_price": 241.81,
+      "total_value": 30613.78,
+      "realized_pnl": -15.43,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-03 20:35:50 UTC",
+      "action": "SELL",
+      "ticker": "WDC",
+      "shares": 90.4159,
+      "exec_price": 338.59,
+      "total_value": 30613.96,
+      "realized_pnl": -15.25,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-03 20:35:50 UTC",
+      "action": "BUY",
+      "ticker": "NTAP",
+      "shares": 165.1656,
+      "exec_price": 185.35,
+      "total_value": 30613.88,
+      "reason": "Top #1 rank allocation (P(Up)=62.2%)"
+    },
+    {
+      "timestamp": "2026-11-03 20:35:50 UTC",
+      "action": "BUY",
+      "ticker": "MDB",
+      "shares": 92.6023,
+      "exec_price": 330.6,
+      "total_value": 30613.86,
+      "reason": "Top #2 rank allocation (P(Up)=55.7%)"
     }
   ],
-  "last_updated": "2026-11-03T20:18:08.893148+00:00"
+  "last_updated": "2026-11-03T20:35:50.208696+00:00"
 }
