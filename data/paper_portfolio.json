@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": -0.0,
+  "cash": 0.0,
   "positions": {
+    "SMCI": {
+      "qty": 1005.7130697448928,
+      "avg_price": 30.455220534324646,
+      "entry_time": "2026-11-03 20:18:08 UTC"
+    },
+    "CRWD": {
+      "qty": 126.60314581379171,
+      "avg_price": 241.93090255737303,
+      "entry_time": "2026-11-03 20:18:08 UTC"
+    },
     "WDC": {
-      "qty": 81.37415583243829,
-      "avg_price": 395.6077086639404,
-      "entry_time": "2026-10-30 19:38:16 UTC"
-    },
-    "NVDA": {
-      "qty": 150.59512638870007,
-      "avg_price": 213.76683366394042,
-      "entry_time": "2026-10-30 19:38:16 UTC"
-    },
-    "IREN": {
-      "qty": 1225.7581391620959,
-      "avg_price": 26.263125,
-      "entry_time": "2026-10-30 19:38:16 UTC"
+      "qty": 90.41585380088542,
+      "avg_price": 338.75929133605956,
+      "entry_time": "2026-11-03 20:18:08 UTC"
     }
   },
   "trade_history": [
@@ -1004,7 +1004,64 @@
       "exec_price": 26.26,
       "total_value": 32192.24,
       "reason": "Top #3 rank allocation (P(Up)=59.6%)"
+    },
+    {
+      "timestamp": "2026-11-03 20:18:08 UTC",
+      "action": "SELL",
+      "ticker": "WDC",
+      "shares": 81.3742,
+      "exec_price": 338.42,
+      "total_value": 27538.7,
+      "realized_pnl": -4653.54,
+      "reason": "Stop-loss hit (-14.4% <= -5%)"
+    },
+    {
+      "timestamp": "2026-11-03 20:18:08 UTC",
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 150.5951,
+      "exec_price": 213.66,
+      "total_value": 32176.62,
+      "realized_pnl": -15.62,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-03 20:18:08 UTC",
+      "action": "SELL",
+      "ticker": "IREN",
+      "shares": 1225.7581,
+      "exec_price": 26.25,
+      "total_value": 32172.31,
+      "realized_pnl": -19.92,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-03 20:18:08 UTC",
+      "action": "BUY",
+      "ticker": "SMCI",
+      "shares": 1005.7131,
+      "exec_price": 30.46,
+      "total_value": 30629.21,
+      "reason": "Top #1 rank allocation (P(Up)=57.8%)"
+    },
+    {
+      "timestamp": "2026-11-03 20:18:08 UTC",
+      "action": "BUY",
+      "ticker": "CRWD",
+      "shares": 126.6031,
+      "exec_price": 241.93,
+      "total_value": 30629.21,
+      "reason": "Top #2 rank allocation (P(Up)=56.1%)"
+    },
+    {
+      "timestamp": "2026-11-03 20:18:08 UTC",
+      "action": "BUY",
+      "ticker": "WDC",
+      "shares": 90.4159,
+      "exec_price": 338.76,
+      "total_value": 30629.21,
+      "reason": "Top #3 rank allocation (P(Up)=63.7%)"
     }
   ],
-  "last_updated": "2026-10-30T19:38:16.427073+00:00"
+  "last_updated": "2026-11-03T20:18:08.893148+00:00"
 }
