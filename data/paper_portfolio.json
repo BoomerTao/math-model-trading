@@ -1,12 +1,7 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.0,
+  "cash": 3.06,
   "positions": {
-    "NTAP": {
-      "qty": 165.1656318071607,
-      "avg_price": 185.35262450408933,
-      "entry_time": "2026-11-03 20:35:50 UTC"
-    },
     "CRWD": {
       "qty": 126.26241341716447,
       "avg_price": 244.80233267211912,
@@ -16,6 +11,11 @@
       "qty": 74.17537074268017,
       "avg_price": 408.6041938934326,
       "entry_time": "2026-11-04 20:33:13 UTC"
+    },
+    "SMCI": {
+      "qty": 974.1890420902463,
+      "avg_price": 31.40569438934326,
+      "entry_time": "2026-11-04 20:54:52 UTC"
     }
   },
   "trade_history": [
@@ -1137,7 +1137,26 @@
       "exec_price": 408.6,
       "total_value": 30308.37,
       "reason": "Top #3 rank allocation (P(Up)=50.2%)"
+    },
+    {
+      "timestamp": "2026-11-04 20:54:52 UTC",
+      "action": "SELL",
+      "ticker": "NTAP",
+      "shares": 165.1656,
+      "exec_price": 185.26,
+      "total_value": 30598.14,
+      "realized_pnl": -15.74,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-04 20:54:52 UTC",
+      "action": "BUY",
+      "ticker": "SMCI",
+      "shares": 974.189,
+      "exec_price": 31.41,
+      "total_value": 30595.08,
+      "reason": "Top #3 rank allocation (P(Up)=50.6%)"
     }
   ],
-  "last_updated": "2026-11-04T20:33:13.681830+00:00"
+  "last_updated": "2026-11-04T20:54:52.566053+00:00"
 }
