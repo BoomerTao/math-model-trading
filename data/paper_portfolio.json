@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "SMCI": {
-      "qty": 1005.7130697448928,
-      "avg_price": 30.455220534324646,
-      "entry_time": "2026-11-03 20:18:08 UTC"
-    },
     "NTAP": {
       "qty": 165.1656318071607,
       "avg_price": 185.35262450408933,
       "entry_time": "2026-11-03 20:35:50 UTC"
     },
-    "MDB": {
-      "qty": 92.60225335903112,
-      "avg_price": 330.5952076721191,
-      "entry_time": "2026-11-03 20:35:50 UTC"
+    "CRWD": {
+      "qty": 126.26241341716447,
+      "avg_price": 244.80233267211912,
+      "entry_time": "2026-11-04 20:33:13 UTC"
+    },
+    "DELL": {
+      "qty": 74.17537074268017,
+      "avg_price": 408.6041938934326,
+      "entry_time": "2026-11-04 20:33:13 UTC"
     }
   },
   "trade_history": [
@@ -1099,7 +1099,45 @@
       "exec_price": 330.6,
       "total_value": 30613.86,
       "reason": "Top #2 rank allocation (P(Up)=55.7%)"
+    },
+    {
+      "timestamp": "2026-11-04 20:33:13 UTC",
+      "action": "SELL",
+      "ticker": "SMCI",
+      "shares": 1005.7131,
+      "exec_price": 30.44,
+      "total_value": 30618.7,
+      "realized_pnl": -10.51,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-04 20:33:13 UTC",
+      "action": "SELL",
+      "ticker": "MDB",
+      "shares": 92.6023,
+      "exec_price": 330.43,
+      "total_value": 30599.0,
+      "realized_pnl": -14.86,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-04 20:33:13 UTC",
+      "action": "BUY",
+      "ticker": "CRWD",
+      "shares": 126.2624,
+      "exec_price": 244.8,
+      "total_value": 30909.33,
+      "reason": "Top #1 rank allocation (P(Up)=54.6%)"
+    },
+    {
+      "timestamp": "2026-11-04 20:33:13 UTC",
+      "action": "BUY",
+      "ticker": "DELL",
+      "shares": 74.1754,
+      "exec_price": 408.6,
+      "total_value": 30308.37,
+      "reason": "Top #3 rank allocation (P(Up)=50.2%)"
     }
   ],
-  "last_updated": "2026-11-03T20:35:50.208696+00:00"
+  "last_updated": "2026-11-04T20:33:13.681830+00:00"
 }
