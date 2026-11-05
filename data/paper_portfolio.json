@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 3.06,
+  "cash": 0.0,
   "positions": {
-    "CRWD": {
-      "qty": 126.26241341716447,
-      "avg_price": 244.80233267211912,
-      "entry_time": "2026-11-04 20:33:13 UTC"
+    "ORCL": {
+      "qty": 247.11779326824535,
+      "avg_price": 123.79186835861205,
+      "entry_time": "2026-11-05 20:49:50 UTC"
     },
-    "DELL": {
-      "qty": 74.17537074268017,
-      "avg_price": 408.6041938934326,
-      "entry_time": "2026-11-04 20:33:13 UTC"
+    "CRWV": {
+      "qty": 631.4722541697284,
+      "avg_price": 48.44420816802978,
+      "entry_time": "2026-11-05 20:49:50 UTC"
     },
-    "SMCI": {
-      "qty": 974.1890420902463,
-      "avg_price": 31.40569438934326,
-      "entry_time": "2026-11-04 20:54:52 UTC"
+    "STX": {
+      "qty": 54.887957355835674,
+      "avg_price": 557.338527557373,
+      "entry_time": "2026-11-05 20:49:50 UTC"
     }
   },
   "trade_history": [
@@ -1156,7 +1156,64 @@
       "exec_price": 31.41,
       "total_value": 30595.08,
       "reason": "Top #3 rank allocation (P(Up)=50.6%)"
+    },
+    {
+      "timestamp": "2026-11-05 20:49:50 UTC",
+      "action": "SELL",
+      "ticker": "CRWD",
+      "shares": 126.2624,
+      "exec_price": 244.68,
+      "total_value": 30893.58,
+      "realized_pnl": -15.75,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-05 20:49:50 UTC",
+      "action": "SELL",
+      "ticker": "DELL",
+      "shares": 74.1754,
+      "exec_price": 408.4,
+      "total_value": 30292.9,
+      "realized_pnl": -15.47,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-05 20:49:50 UTC",
+      "action": "SELL",
+      "ticker": "SMCI",
+      "shares": 974.189,
+      "exec_price": 31.39,
+      "total_value": 30583.98,
+      "realized_pnl": -11.11,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-05 20:49:50 UTC",
+      "action": "BUY",
+      "ticker": "ORCL",
+      "shares": 247.1178,
+      "exec_price": 123.79,
+      "total_value": 30591.17,
+      "reason": "Top #1 rank allocation (P(Up)=62.7%)"
+    },
+    {
+      "timestamp": "2026-11-05 20:49:50 UTC",
+      "action": "BUY",
+      "ticker": "CRWV",
+      "shares": 631.4723,
+      "exec_price": 48.44,
+      "total_value": 30591.17,
+      "reason": "Top #2 rank allocation (P(Up)=60.9%)"
+    },
+    {
+      "timestamp": "2026-11-05 20:49:50 UTC",
+      "action": "BUY",
+      "ticker": "STX",
+      "shares": 54.888,
+      "exec_price": 557.34,
+      "total_value": 30591.17,
+      "reason": "Top #3 rank allocation (P(Up)=65.8%)"
     }
   ],
-  "last_updated": "2026-11-04T20:54:52.566053+00:00"
+  "last_updated": "2026-11-05T20:49:50.918190+00:00"
 }
