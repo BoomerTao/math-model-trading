@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "CRWV": {
-      "qty": 676.9227259177371,
-      "avg_price": 43.68182984733581,
-      "entry_time": "2026-11-06 20:05:41 UTC"
-    },
     "VRT": {
       "qty": 167.14619763139046,
       "avg_price": 176.8183607254028,
       "entry_time": "2026-11-06 20:32:10 UTC"
     },
-    "IREN": {
-      "qty": 1379.0029025399326,
-      "avg_price": 21.420704847335813,
-      "entry_time": "2026-11-10 20:37:02 UTC"
+    "AMAT": {
+      "qty": 83.24401020828222,
+      "avg_price": 370.73526278686523,
+      "entry_time": "2026-11-10 20:59:06 UTC"
+    },
+    "LRCX": {
+      "qty": 127.42796754137892,
+      "avg_price": 221.42065255737305,
+      "entry_time": "2026-11-10 20:59:06 UTC"
     }
   },
   "trade_history": [
@@ -1327,7 +1327,45 @@
       "exec_price": 21.42,
       "total_value": 29539.21,
       "reason": "Top #2 rank allocation (P(Up)=63.0%)"
+    },
+    {
+      "timestamp": "2026-11-10 20:59:06 UTC",
+      "action": "SELL",
+      "ticker": "CRWV",
+      "shares": 676.9227,
+      "exec_price": 43.66,
+      "total_value": 29553.2,
+      "realized_pnl": -16.02,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-10 20:59:06 UTC",
+      "action": "SELL",
+      "ticker": "IREN",
+      "shares": 1379.0029,
+      "exec_price": 21.41,
+      "total_value": 29523.47,
+      "realized_pnl": -15.74,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-10 20:59:06 UTC",
+      "action": "BUY",
+      "ticker": "AMAT",
+      "shares": 83.244,
+      "exec_price": 370.74,
+      "total_value": 30861.49,
+      "reason": "Top #2 rank allocation (P(Up)=55.5%)"
+    },
+    {
+      "timestamp": "2026-11-10 20:59:06 UTC",
+      "action": "BUY",
+      "ticker": "LRCX",
+      "shares": 127.428,
+      "exec_price": 221.42,
+      "total_value": 28215.18,
+      "reason": "Top #3 rank allocation (P(Up)=50.1%)"
     }
   ],
-  "last_updated": "2026-11-10T20:37:02.517702+00:00"
+  "last_updated": "2026-11-10T20:59:06.739451+00:00"
 }
