@@ -1,21 +1,21 @@
 {
   "initial_cash": 100000.0,
-  "cash": 0.07,
+  "cash": 0.0,
   "positions": {
     "CRWV": {
       "qty": 676.9227259177371,
       "avg_price": 43.68182984733581,
       "entry_time": "2026-11-06 20:05:41 UTC"
     },
-    "ARM": {
-      "qty": 177.18178129188865,
-      "avg_price": 166.80336122131348,
-      "entry_time": "2026-11-06 20:32:10 UTC"
-    },
     "VRT": {
       "qty": 167.14619763139046,
       "avg_price": 176.8183607254028,
       "entry_time": "2026-11-06 20:32:10 UTC"
+    },
+    "IREN": {
+      "qty": 1379.0029025399326,
+      "avg_price": 21.420704847335813,
+      "entry_time": "2026-11-10 20:37:02 UTC"
     }
   },
   "trade_history": [
@@ -1308,7 +1308,26 @@
       "exec_price": 176.82,
       "total_value": 29554.52,
       "reason": "Top #2 rank allocation (P(Up)=51.5%)"
+    },
+    {
+      "timestamp": "2026-11-10 20:37:02 UTC",
+      "action": "SELL",
+      "ticker": "ARM",
+      "shares": 177.1818,
+      "exec_price": 166.72,
+      "total_value": 29539.14,
+      "realized_pnl": -15.37,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-10 20:37:02 UTC",
+      "action": "BUY",
+      "ticker": "IREN",
+      "shares": 1379.0029,
+      "exec_price": 21.42,
+      "total_value": 29539.21,
+      "reason": "Top #2 rank allocation (P(Up)=63.0%)"
     }
   ],
-  "last_updated": "2026-11-06T20:32:10.012098+00:00"
+  "last_updated": "2026-11-10T20:37:02.517702+00:00"
 }
