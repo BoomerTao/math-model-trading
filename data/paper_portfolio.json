@@ -12,10 +12,10 @@
       "avg_price": 523.2615,
       "entry_time": "2026-11-13 20:40:36 UTC"
     },
-    "AVGO": {
-      "qty": 81.00339504065487,
-      "avg_price": 364.54216534423824,
-      "entry_time": "2026-11-13 20:40:36 UTC"
+    "CEG": {
+      "qty": 104.45985851690811,
+      "avg_price": 282.5411938934326,
+      "entry_time": "2026-11-13 20:58:47 UTC"
     }
   },
   "trade_history": [
@@ -1422,7 +1422,26 @@
       "exec_price": 364.54,
       "total_value": 29529.15,
       "reason": "Top #3 rank allocation (P(Up)=59.4%)"
+    },
+    {
+      "timestamp": "2026-11-13 20:58:47 UTC",
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 81.0034,
+      "exec_price": 364.36,
+      "total_value": 29514.21,
+      "realized_pnl": -14.94,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-13 20:58:47 UTC",
+      "action": "BUY",
+      "ticker": "CEG",
+      "shares": 104.4599,
+      "exec_price": 282.54,
+      "total_value": 29514.21,
+      "reason": "Top #3 rank allocation (P(Up)=57.1%)"
     }
   ],
-  "last_updated": "2026-11-13T20:40:36.324126+00:00"
+  "last_updated": "2026-11-13T20:58:47.884623+00:00"
 }
