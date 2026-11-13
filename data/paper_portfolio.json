@@ -2,20 +2,20 @@
   "initial_cash": 100000.0,
   "cash": 0.0,
   "positions": {
-    "VRT": {
-      "qty": 167.14619763139046,
-      "avg_price": 176.8183607254028,
-      "entry_time": "2026-11-06 20:32:10 UTC"
+    "AMZN": {
+      "qty": 110.35894356055448,
+      "avg_price": 267.57372244262694,
+      "entry_time": "2026-11-13 20:40:36 UTC"
     },
-    "AMAT": {
-      "qty": 83.24401020828222,
-      "avg_price": 370.73526278686523,
-      "entry_time": "2026-11-10 20:59:06 UTC"
+    "MSFT": {
+      "qty": 56.43287979974322,
+      "avg_price": 523.2615,
+      "entry_time": "2026-11-13 20:40:36 UTC"
     },
-    "LRCX": {
-      "qty": 127.42796754137892,
-      "avg_price": 221.42065255737305,
-      "entry_time": "2026-11-10 20:59:06 UTC"
+    "AVGO": {
+      "qty": 81.00339504065487,
+      "avg_price": 364.54216534423824,
+      "entry_time": "2026-11-13 20:40:36 UTC"
     }
   },
   "trade_history": [
@@ -1365,7 +1365,64 @@
       "exec_price": 221.42,
       "total_value": 28215.18,
       "reason": "Top #3 rank allocation (P(Up)=50.1%)"
+    },
+    {
+      "timestamp": "2026-11-13 20:40:36 UTC",
+      "action": "SELL",
+      "ticker": "VRT",
+      "shares": 167.1462,
+      "exec_price": 176.73,
+      "total_value": 29540.01,
+      "realized_pnl": -14.5,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-13 20:40:36 UTC",
+      "action": "SELL",
+      "ticker": "AMAT",
+      "shares": 83.244,
+      "exec_price": 370.55,
+      "total_value": 30846.45,
+      "realized_pnl": -15.04,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-13 20:40:36 UTC",
+      "action": "SELL",
+      "ticker": "LRCX",
+      "shares": 127.428,
+      "exec_price": 221.31,
+      "total_value": 28200.99,
+      "realized_pnl": -14.19,
+      "reason": "Rotated out of top 3 ranked momentum stocks"
+    },
+    {
+      "timestamp": "2026-11-13 20:40:36 UTC",
+      "action": "BUY",
+      "ticker": "AMZN",
+      "shares": 110.3589,
+      "exec_price": 267.57,
+      "total_value": 29529.15,
+      "reason": "Top #1 rank allocation (P(Up)=56.1%)"
+    },
+    {
+      "timestamp": "2026-11-13 20:40:36 UTC",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 56.4329,
+      "exec_price": 523.26,
+      "total_value": 29529.15,
+      "reason": "Top #2 rank allocation (P(Up)=49.5%)"
+    },
+    {
+      "timestamp": "2026-11-13 20:40:36 UTC",
+      "action": "BUY",
+      "ticker": "AVGO",
+      "shares": 81.0034,
+      "exec_price": 364.54,
+      "total_value": 29529.15,
+      "reason": "Top #3 rank allocation (P(Up)=59.4%)"
     }
   ],
-  "last_updated": "2026-11-10T20:59:06.739451+00:00"
+  "last_updated": "2026-11-13T20:40:36.324126+00:00"
 }
